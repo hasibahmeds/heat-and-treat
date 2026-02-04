@@ -262,7 +262,7 @@ const Cart = () => {
 
   <div className="map-wrapper">
     <iframe
-      src="https://www.google.com/maps/d/embed?mid=1JILEgiDL_pGz5TX67QirByUX1xJ9XI8&ehbc=2E312F" width="640" height="480"
+     src="https://www.google.com/maps/d/embed?mid=10GBM7v23KfBnAifAOFeHJ36LFdgu5nA&ehbc=2E312F" width="640" height="480"
       // loading="lazy"
       referrerPolicy="no-referrer-when-downgrade"
     ></iframe>
