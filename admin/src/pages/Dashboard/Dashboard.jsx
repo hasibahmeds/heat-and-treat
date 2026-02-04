@@ -53,30 +53,7 @@ useEffect(() => {
         <div className="card pending">Pending <span>{stats.pendingCount}</span></div>
       </div>
               {/* -------- DAILY REVENUE CHART -------- */}
-<div className="dashboard-chart">
-  <h4>Daily Revenue</h4>
-  <ResponsiveContainer width="100%" height={260}>
-    <LineChart data={chartData}>
-      <XAxis dataKey="_id" />
-      <YAxis />
-      <Tooltip />
-      <Line dataKey="totalRevenue" />
-    </LineChart>
-  </ResponsiveContainer>
-</div>
 
-{/* -------- DAILY ORDERS CHART -------- */}
-<div className="dashboard-chart">
-  <h4>Daily Orders</h4>
-  <ResponsiveContainer width="100%" height={260}>
-    <BarChart data={chartData}>
-      <XAxis dataKey="_id" />
-      <YAxis />
-      <Tooltip />
-      <Bar dataKey="totalOrders" />
-    </BarChart>
-  </ResponsiveContainer>
-</div>
     </div>
   );
 };
