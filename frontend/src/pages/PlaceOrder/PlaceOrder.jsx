@@ -40,7 +40,7 @@ const PlaceOrder = () => {
     let orderData = {
       address: data,
       items: orderItems,
-      amount: getTotalCartAmount() + 0,     /* delivery charge at the end 0 */
+      amount: getTotalCartAmount() + 40,     /* delivery charge at the end 0 */
     };
 
     try {
@@ -103,12 +103,12 @@ const PlaceOrder = () => {
             <hr className="hr" />
             <div className="cart-total-details">
               <p>Delivery Fee</p>
-              <p>{getTotalCartAmount() === 0 ? 0 : 0} TK</p>    {/* delivery charge at the 3rd end 0 */}
+              <p>{getTotalCartAmount() === 0 ? 0 : 40} TK</p>    {/* delivery charge at the 3rd end 0 */}
             </div>
             <hr className="hr" />
             <div className="cart-total-details">
               <b>Total</b>
-              <b>{getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 0} TK</b>   {/* delivery charge at the end 0 */}
+              <b>{getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 40} TK</b>   {/* delivery charge at the end 0 */}
             </div>
                       <button type="submit">PLACE ORDER</button>
           </div>
