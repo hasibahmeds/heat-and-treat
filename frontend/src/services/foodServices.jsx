@@ -2,6 +2,8 @@ import axios from "axios";
 
 const BASE_URL = "http://localhost:4000";
 
+// Storecontext.jsx connect
+
 // FOOD
 export const fetchFoodListService = () => {
   return axios.get(BASE_URL + "/api/food/list");
